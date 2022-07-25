@@ -1,0 +1,15 @@
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.csproj.AssemblyReference.cache
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.AssemblyInfoInputs.cache
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.AssemblyInfo.cs
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.csproj.CoreCompileInputs.cache
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/bin/Debug/net6.0/05-teach_display_sums-solution
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/bin/Debug/net6.0/05-teach_display_sums-solution.deps.json
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/bin/Debug/net6.0/05-teach_display_sums-solution.runtimeconfig.json
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/bin/Debug/net6.0/05-teach_display_sums-solution.dll
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/bin/Debug/net6.0/05-teach_display_sums-solution.pdb
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.dll
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/refint/05-teach_display_sums-solution.dll
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.pdb
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/05-teach_display_sums-solution.genruntimeconfig.cache
+/Users/lynn/Repositories/CSE-212/C-Sharp/05-teach_display_sums-solution/obj/Debug/net6.0/ref/05-teach_display_sums-solution.dll
