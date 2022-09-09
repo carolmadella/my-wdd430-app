@@ -11,6 +11,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.swp
+nohup.out
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
