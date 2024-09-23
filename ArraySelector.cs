@@ -19,11 +19,23 @@ public static class ArraySelector
 
     private static int[] ListSelector(int[] list1, int[] list2, int[] select)
     {
+        int[] result = new int[select.Length];
+            for (int i = 0; i < select.Length; i++)
+            {
+                // Select from list1 if select[i] is 1, otherwise select from list2
+                result[i] = select[i] == 1 ? list1[Math.Min(i, list1.Length - 1)] : list2[Math.Min(i, list2.Length - 1)];
+            }
         return new int[0];
     }
 
     private static char[] ListSelector(char[] list1, char[] list2, int[] select)
     {
+        char[] result = new char[select.Length];
+            for (int i = 0; i < select.Length; i++)
+            {
+                // Select from list1 if select[i] is 1, otherwise select from list2
+                result[i] = select[i] == 1 ? list1[Math.Min(i, list1.Length - 1)] : list2[Math.Min(i, list2.Length - 1)];
+            }
         return new char[0];
     }
 }
