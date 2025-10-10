@@ -23,6 +23,7 @@ export class ContactListComponent {
       '208-496-3768',
       '../../assets/images/barzeer.jpg',
       null
-    )
+    ),
+    
   ];
 }
