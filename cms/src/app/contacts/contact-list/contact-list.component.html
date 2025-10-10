@@ -1,44 +1,45 @@
 <div class="panel panel-default">
-    <!-- 1. PANEL HEADER: Contains the Title and the Action Button -->
-    <div class="panel-heading">
+  <!-- 1. PANEL HEADER: Contains the Title and the Action Button -->
+  <div class="panel-heading">
     <div class="row">
-    <div class="col-xs-8">
-    <!-- Title of the Panel -->
-    <h4 class="panel-title">Contacts</h4>
-    </div>
+      <div class="col-xs-8">
+        <!-- Title of the Panel -->
+        <h3 style= "font-size: 30px" class="panel-title">Contacts</h3>
+      </div>
 
-    <div class="col-xs-4">
-    <!-- Button/Anchor tag for creating a new contact -->
-    <a href="#" class="btn btn-success">New Contact</a>
+      <div class="col-xs-4 new-contact-button">
+        <!-- Button/Anchor tag for creating a new contact -->
+        <a href="#" class="btn btn-success">New Contact</a>
+      </div>
     </div>
-    </div>
-    </div>
-    
-    <!-- 2. PANEL BODY: This is where the dynamic list will be placed next -->
-    
-    <div class="panel-body">
+  </div>
+
+  <!-- 2. PANEL BODY: This is where the dynamic list will be placed next -->
+
+  <div class="panel-body">
     <a
-href="#"
-class="list-group-item clearfix"
-*ngFor="let contact of contacts"
->
-<div class="pull-left">
-<!-- Display the name property using string interpolation -->
-<h4 class="list-group-item-heading">{{ contact.name }}</h4>
-</div>
-<span class="pull-right">
-<!--
+      href="#"
+      class="list-group-item clearfix"
+      *ngFor="let contact of contacts"
+    >
+      <div class="pull-left">
+        <!-- Display the name property using string interpolation -->
+        <h4 class="list-group-item-heading">{{ contact.name }}</h4>
+      </div>
+      <span class="pull-right">
+        <!--
 Display the image. [src] uses property binding to dynamically
 set the image source from the contact.imageUrl property.
 -->
-<div *ngFor="let contact of contacts"></div>
-<img
-[src]="contact.imageUrl"
-alt="{{ contact.name }}"
-class="img-responsive img-thumbnail"
-style="max-height: 50px; border-radius: 4px;"
-onerror="this.onerror=null;">
-</span>
-</a>
-    </div>
-    </div>
+        <div *ngFor="let contact of contacts"></div>
+        <img
+          [src]="contact.imageUrl"
+          alt="{{ contact.name }}"
+          class="img-responsive img-thumbnail"
+          style="max-height: 50px; border-radius: 4px"
+          onerror="this.onerror=null;"
+        />
+      </span>
+    </a>
+  </div>
+</div>
