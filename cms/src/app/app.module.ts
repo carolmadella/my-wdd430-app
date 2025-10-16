@@ -13,6 +13,14 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactListComponent } from './contacts/contact-list/contact-list.component';
 import { ContactDetailComponent } from './contacts/contact-detail/contact-detail.component';
+import { ContactItemComponent } from './contacts/contact-list/contact-item/contact-item.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { DocumentListComponent } from './documents/document-list/document-list.component';
+import { DocumentDetailComponent } from './documents/document-detail/document-detail.component';
+import { DocumentItemComponent } from './documents/document-item/document-item.component';
+import { MessageListComponent } from './message-list/message-list.component';
+import { MessageItemComponent } from './message-list/message-item/message-item.component';
+import { MessageEditComponent } from './message-list/message-edit/message-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +34,15 @@ import { ContactDetailComponent } from './contacts/contact-detail/contact-detail
     ShoppingEditComponent,
     ContactsComponent,
     ContactListComponent,
-    ContactDetailComponent
+    ContactDetailComponent,
+    ContactItemComponent,
+    DocumentsComponent,
+    DocumentListComponent,
+    DocumentDetailComponent,
+    DocumentItemComponent,
+    MessageListComponent,
+    MessageItemComponent,
+    MessageEditComponent
   ],
   imports: [
     BrowserModule,

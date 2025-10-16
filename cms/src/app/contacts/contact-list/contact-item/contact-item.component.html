@@ -1,0 +1,20 @@
+<a href="#" class="list-group-item clearfix">
+  <div class="pull-left">
+    <!-- Display the name property using string interpolation -->
+    <h4 class="list-group-item-heading">{{ contact.name }}</h4>
+  </div>
+  <span class="pull-right">
+    <!--
+Display the image. [src] uses property binding to dynamically
+set the image source from the contact.imageUrl property.
+-->
+
+    <img
+      [src]="contact.imageUrl"
+      alt="{{ contact.name }}"
+      class="img-responsive img-thumbnail"
+      style="max-height: 50px; border-radius: 4px"
+      onerror="this.onerror=null;"
+    />
+  </span>
+</a>
