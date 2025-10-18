@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core'
 @Component({
   selector: 'cms-header',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 
