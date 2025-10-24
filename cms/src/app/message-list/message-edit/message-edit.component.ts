@@ -32,5 +32,6 @@ export class MessageEditComponent {
     const message = new Message('5',subject,msgText,this.currentSender);
 
     this.messageService.addMessage(message);
+    this.onClear();
   }
 }
