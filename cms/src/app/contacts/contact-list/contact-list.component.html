@@ -1,23 +1,16 @@
 <div class="panel panel-default">
-  <!-- 1. PANEL HEADER: Contains the Title and the Action Button -->
   <div class="panel-heading">
     <div class="row">
       <div class="col-xs-8">
-        <!-- Title of the Panel -->
         <h3 style= "font-size: 30px" class="panel-title">Contacts</h3>
       </div>
 
       <div class="col-xs-4 new-contact-button">
-        <!-- Button/Anchor tag for creating a new contact -->
-        <a href="#" class="btn btn-success">New Contact</a>
+        <a routerLink="new" class="btn btn-success">New Contact</a>
       </div>
     </div>
   </div>
-
-  <!-- 2. PANEL BODY: This is where the dynamic list will be placed next -->
-
   <div class="panel-body">
-    
-    <cms-contact-item *ngFor="let contact of contacts" [contact]="contact" (click)="onSelected(contact)"/>
+    <cms-contact-item [routerLink]="contact.id" *ngFor="let contact of contacts" [contact]="contact"/>
   </div>
 </div>

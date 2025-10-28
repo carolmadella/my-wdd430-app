@@ -8,6 +8,8 @@ import { Document } from '../models/document.model';
 export class DocumentService {
 
   documentSelectedEvent: EventEmitter<Document> = new EventEmitter();
+  documentChangedEvent: EventEmitter<Document[]> = new EventEmitter();
+
 
 
   documents:Document[] = [];
@@ -27,4 +29,16 @@ export class DocumentService {
     }
     return null;
   }
+
+  deleteDocument(document: Document | null) {
+   if (!document) {
+      return;
+   }
+   const pos = this.documents.indexOf(document);
+   if (pos < 0) {
+      return;
+   }
+   this.documents.splice(pos, 1);
+   this.documentChangedEvent.emit(this.documents.slice());
+}
 }

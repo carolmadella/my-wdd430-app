@@ -1,20 +1,16 @@
 <div class="panel panel-default panel-width">
-  <!-- 1. PANEL HEADER: Contains the Title and the Action Button -->
   <div class="panel-heading">
     <div class="row">
-      <!-- Title of the Panel -->
       <h3 style="padding: 0 16px">{{ contact?.name }}</h3>
     </div>
     <div class="row" style="padding: 0px 8px">
       <span class="pull-left"><img [src]="contact?.imageUrl" /></span>
       <div class="button-group pull-right">
-        <button href="#" class="btn btn-primary">Edit</button>
-        <button href="#" class="btn btn-danger">Delete</button>
+        <button  routerLink="edit"  class="btn btn-primary">Edit</button>
+        <button (click)="onDelete()" class="btn btn-danger">Delete</button>
       </div>
     </div>
   </div>
-  <!-- 2. PANEL BODY: This is where the dynamic list will be placed next -->
-
   <div class="panel-body">
     <p><strong>Email:</strong> {{ contact?.email }}</p>
     <p><strong>Phone:</strong> {{ contact?.phone }}</p>
