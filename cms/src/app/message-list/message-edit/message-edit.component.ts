@@ -29,7 +29,7 @@ export class MessageEditComponent {
    
     const subject = this.subjectRef.nativeElement.value;
     const msgText = this.msgTextRef.nativeElement.value;
-    const message = new Message('5',subject,msgText,this.currentSender);
+    const message = new Message("",subject,msgText,this.currentSender);
 
     this.messageService.addMessage(message);
     this.onClear();

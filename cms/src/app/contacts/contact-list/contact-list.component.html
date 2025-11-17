@@ -1,20 +1,42 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <div class="row">
-      <div class="col-xs-8">
-        <h3 style= "font-size: 30px" class="panel-title">Contacts</h3>
-      </div>
-
-      <div class="col-xs-4 new-contact-button">
-        <a routerLink="new" class="btn btn-success">New Contact</a>
+      <div class="col-xs-12">
+        <div class="row">
+          <span class="title pad-left-right">Contacts</span>
+        </div>
+        <div class="row">
+          <div class="input-group pull-left pad-left-right col-xs-7">
+          <input 
+            name="searchBox"
+            #searchBox
+            type="text"
+            id="searchBox"
+            class="form-control"
+            (keyup)="search(searchBox.value)"
+            placeholder="Enter a search value">
+            <div class="glyphicon glyphicon-search input-group-addon" (click)="search(searchBox.value)"></div>
+          </div>
+          <div class="pull-right pad-left-right">
+            <a class="btn btn-success" [routerLink]="['new']">New Contact</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div cdkDropList
-     id="contactList"
-     [cdkDropListData]="contacts"
-     [cdkDropListConnectedTo]="['groupList']" class="panel-body">
-    <cms-contact-item cdkDrag  
-      [cdkDragData]="contact"[routerLink]="contact.id" *ngFor="let contact of contacts" [contact]="contact"/>
+  <div
+    cdkDropList
+    id="contactList"
+    [cdkDropListData]="contacts"
+    [cdkDropListConnectedTo]="['groupList']"
+    class="panel-body"
+  >
+    <cms-contact-item
+      cdkDrag
+      [cdkDragData]="contact"
+      [routerLink]="contact.id"
+      *ngFor="let contact of contacts | contactsFilter: term"
+      [contact]="contact"
+    />
   </div>
 </div>
