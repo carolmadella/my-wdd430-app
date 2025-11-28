@@ -10,7 +10,12 @@ var index = require('./server/routes/app');
 const messageRoutes = require('./server/routes/messages');
 const contactRoutes = require('./server/routes/contacts');
 const documentsRoutes = require('./server/routes/documents');
+var mongoose = require('mongoose');
+// establish a connection to the mongo database
+mongoose.connect('mongodb://localhost:27017/cms').then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.log('Connection failed: ' + err));
 
+  
 // ... ADD CODE TO IMPORT YOUR ROUTING FILES HERE ... 
 
 var app = express(); // create an instance of express
